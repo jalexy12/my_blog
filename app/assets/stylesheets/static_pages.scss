@@ -194,36 +194,6 @@ p,
 	}
 }
 
-.tags {
-	display: inline;
-}
-
-.tags li{ 
-	display: inline-block;
-}
-
-.posts-heading {
-	background-image: url(asset_path('skyline.jpg'));
-}
-
-.post-list-single-post{
-	line-height: 1.8em;
-	margin: auto;
-	width: 60%;
-}
-
-.post-list-single-post h2 {
-	font-size: 36px;
-}
-
-.post-list-single-post p {
-	font-size: 24px;
-}
-
-.cursive {
-	font-family: 'Sarina', cursive;
-	font-size: 20px;
-}
 
 @media only screen and (max-width: 40em) { 
 	nav {

@@ -1,0 +1,63 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.tags {
+	display: inline;
+}
+
+.tags li{ 
+	display: inline-block;
+}
+
+.posts-heading {
+	position: relative;
+	background: image-url('skyline.jpg') center center;
+	height: 75vh;
+}
+
+.heading-content {
+	z-index: 10;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	text-align: center;
+	color: #FFF;
+}
+
+.heading-content h1 {
+	font-size: 68px;
+}
+
+.heading-content h2 {
+	font-size: 32px;
+}
+
+.background-wrapper{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 0;
+}
+
+.post-list-single-post{
+	line-height: 1.8em;
+	margin: auto;
+	width: 60%;
+}
+
+.post-list-single-post h2 {
+	font-size: 36px;
+}
+
+.post-list-single-post p {
+	font-size: 24px;
+}
+
+.cursive {
+	font-family: 'Sarina', cursive;
+	font-size: 20px;
+}
