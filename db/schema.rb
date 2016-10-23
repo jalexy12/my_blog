@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161023213808) do
+ActiveRecord::Schema.define(version: 20161023233202) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,11 +27,12 @@ ActiveRecord::Schema.define(version: 20161023213808) do
   create_table "posts", force: :cascade do |t|
     t.string   "title"
     t.datetime "posted_at"
-    t.boolean  "published"
+    t.boolean  "published",         default: false
     t.text     "raw_content"
     t.text     "converted_content"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
+    t.datetime "created_at",                        null: false
+    t.datetime "updated_at",                        null: false
+    t.integer  "category",          default: 0
   end
 
   create_table "tags", force: :cascade do |t|

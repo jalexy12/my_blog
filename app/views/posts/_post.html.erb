@@ -1,0 +1,10 @@
+<div class="post-list-single-post">
+	<h2><%= post.title %></h2>
+	<p><%= truncate(raw(post.raw_content), length: 120, escape: false, omission: link_to("...continued", post_path(post)))%></p>
+	<time datetime="<%= post.posted_at %>"><%= pretty_date(post.posted_at) %></time>
+	<ul class="tags">
+		<% post.tags.each do | tag | %>
+			<li><%= tag.name  %></li>
+		<% end %>
+	</ul>
+</div>
