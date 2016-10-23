@@ -2,10 +2,9 @@
 <html>
   <head>
     <title>Jalexydotsexyplatform</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all' %>
-    <%= javascript_include_tag 'application' %>
+    <%= render 'header_partials/meta'  %>
+    <%= render 'header_partials/scripts'  %>
+    <%= render 'header_partials/stylesheets'  %>
   </head>
 
   <body>

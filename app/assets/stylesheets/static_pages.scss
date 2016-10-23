@@ -1,0 +1,240 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+	font-family: 'Inconsolata', Arial, Helvetica, sans-serif;
+	font-color: #252D2F;
+	font-size: 16px;
+}
+
+hr {
+	border-top: 2px solid #E7D1DE;
+}
+
+.heading-section {
+	position: relative;
+	background-image: url(asset_path('background.jpg'));
+	background-position: center;
+	height: 100vh;
+}
+
+.home-image {
+	height: 130px;
+	width: 130px;
+}
+
+.home-name {
+	font-size: 76px;
+}
+
+.home-title {
+	font-size: 28px;
+}
+
+.index-prof {
+	height: 400px;
+	width: 400px;
+}
+
+.info {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	color: #FAEBD7;
+}
+
+.prof-image {
+	height: 225px;
+	width: 225px;
+	border-radius: 50%;
+}
+
+#details {
+	position: relative;
+}
+
+.prof-section {
+	padding-top: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.specs {
+	display: inline-block;
+}
+
+.specs h3 {
+	font-size: 2.5em;
+}
+
+.spec-field {
+	text-align: center;
+}
+
+.about { 
+	margin-top: 95px;
+}
+
+.about h3 {
+	font-size: 2.5em;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+
+p,
+.spec-item,
+.education-section,
+.experience-section
+{
+	font-family: 'Raleway', sans-serif;
+}
+.skills h3 {
+	margin-bottom: 30px;
+}
+
+.skill {
+	padding-left: 75px;
+}
+
+.skill progress {
+	float: right;
+}
+
+.edu-block {
+	height: 100px;
+	margin-bottom: 15px;
+}
+
+.exp-block {
+	margin-bottom: 30px;
+}
+
+#contact {
+	padding-bottom: 125px;
+}
+
+.arrow-box {
+	position: absolute;
+	bottom: 0;
+	left: 50px;
+	height: 80px;
+	width: 125px;
+	background-color: #E7D1DE;
+}
+
+#details-link {
+	color: white;
+}
+
+.arrow {
+	top: 50%;
+	left: 50%;
+	font-size: 2em;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+@media only screen and (min-width: 35.063em) { /* min-width 1025px, large screens */
+	// .navbar:not(.showing) { 
+	// 	display: none;
+	// }
+	
+
+	.navbar.affix {
+		top: 50px;
+		left: 50px;
+	}
+
+	.navbar:not(.affix) {
+		position: absolute;
+		left: 50px;
+		top: 0;
+	}
+
+	.navbar {
+		width: 125px;
+		margin: 0;
+		float: none;
+		background-color: #E7D1DE;
+
+	}
+
+	.navbar-collapse {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.navbar-nav {
+		margin: 0;
+		width: 100%;
+	}
+
+	.navbar-nav > li {
+		float: none;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+		font-size: 20px;
+		color: white;
+	}
+
+	.nav-container {
+		padding: 0;
+	}
+
+	.prof-section {
+		padding-left: 17%;
+		padding-right: 17%;
+	}
+	.image-container {
+		padding-left: 10%;
+	}
+}
+
+.tags {
+	display: inline;
+}
+
+.tags li{ 
+	display: inline-block;
+}
+
+.posts-heading {
+	background-image: url(asset_path('skyline.jpg'));
+}
+
+.post-list-single-post{
+	line-height: 1.8em;
+	margin: auto;
+	width: 60%;
+}
+
+.post-list-single-post h2 {
+	font-size: 36px;
+}
+
+.post-list-single-post p {
+	font-size: 24px;
+}
+
+.cursive {
+	font-family: 'Sarina', cursive;
+	font-size: 20px;
+}
+
+@media only screen and (max-width: 40em) { 
+	nav {
+		display: none;
+	}
+
+	.arrow-box {
+		display: none;
+	}
+
+	.specs {
+		margin-top: 15px;
+	}
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
